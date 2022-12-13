@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>List of Employees</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div class="top">
+            <h1>Pranjal Management System</h1>
+        </div>
+        <div class="divbut">
+            <a class="abut" href="/emp">Add New Employee</a> 
+            <a class="search" href="/search">Search</a> 
+        </div>
+        <div class="divtab">
+            <h2>Employees List</h2>        
+            <table>
+            <thead>
+                   <tr>
+                       <th>Code</th>
+                       <th>Name</th>
+                       <th>Email</th>
+                       <th>Shift</th>
+                       <th>Dept</th>
+                       <th>Action</th>
+                   </tr> 
+            </thead>
+            <tbody>
+                {% if employees.count > 1 %}
+                    {% for e in employees %}
+                        <tr>
+                            <td>{{e.Code}}</td>
+                            <td>{{e.Name}}</td>
+                            <td>{{e.Email}}</td>
+                            <td>{{e.Shift}}</td>
+                            <td>{{e.Dept}}</td>
+                            <td>
+                                <a href="/edit/{{e.Code}}">Edit</a> |
+                                <a href="/del/{{e.Code}}" onclick="if(!(confirm('Do u want to delete?'))) return false;">Delete</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                    <tr>
+                            <td>{{employees.Code}}</td>
+                            <td>{{employees.Name}}</td>
+                            <td>{{employees.Email}}</td>
+                            <td>{{employees.Shift}}</td>
+                            <td>{{employees.Dept}}</td>
+                            <td>
+                                <a href="/edit/{{employees.Code}}">Edit</a> |
+                                <a href="/del/{{employees.Code}}" onclick="if(!(confirm('Do u want to delete?'))) return false;">Delete</a>
+                            </td>
+                        </tr>
+                    {% endif %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Employee Form</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div class="top">
+            <h1>Pranjal Management System</h1>
+        </div>
+        <div class="divbut">
+            <h2>Add New Employee</h2>
+        </div>
+        <div class="divtab">
+           
+        <form action="" method="post">
+            <div class="mainform">
+            {% csrf_token %}
+            <label for="" class="label">Code : </label><br>            
+            {{form.Code}}
+            <br>
+            <label for="" class="label">Name : </label><br>                        
+            {{form.Name}}
+            <br>
+            <label for="" class="label">Email : </label><br>                        
+            {{form.Email}}
+            <br>
+            <label for="" class="label">Shift : </label><br>                        
+            {{form.Shift}}
+            <br>
+            <label for="" class="label">Dept : </label><br>                        
+            {{form.Dept}}
+            <br><br>
+            <input type="submit" value="Add Record"/>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>

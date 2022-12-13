@@ -1,0 +1,142 @@
+h1
+{
+    text-align:center;
+    color:#ffffff;
+}
+h2
+{
+    text-align:center;
+    color:#9c1717;
+}
+.top
+{
+	position:absolute;
+	left:0%;
+	top:0%;
+	width:100%;
+	height:15%;
+	background-color:#369854;
+}
+.divbut
+{
+	position:absolute;
+	left:0%;
+	top:15%;
+	width:100%;
+	height:15%;
+	background-color:#e2d79c;
+}
+.divtab
+{
+	position:absolute;
+	left:0%;
+	top:30%;
+	width:100%;
+	height:70%;
+	background-color:#fcf5d1;
+}
+.mainform
+{
+	position:absolute;
+	left:40%;
+	top:10%;
+	width:35%;
+	height:80%;
+}
+input[type=submit]
+{
+	width:50%;
+	font-size:16px;
+	padding:8px 10px;
+	margin-left:0px;
+	border:1px solid #369854;
+	border-radius: 15px;
+	background-color:#369854;
+	color:white;
+}
+.label
+{
+	font-weight: bold;
+	color:rgb(0, 0, 0);
+}
+input[type=submit]:hover
+{
+	background-color:#9dc4a9;
+	color:rgb(190, 10, 10);
+}
+input[type=text],input[type=email],input[type=password],input[type=date]
+{
+	width:50%;
+	padding:4px 10px;
+	margin-left:0px;
+	box-sizing:border-box;
+	border:1px solid #369854;
+	border-radius:6px;
+	background-color:#decfab;
+	color:black;
+}
+select
+{
+	width:50%;
+	padding:4px 10px;
+	margin-left:0px;
+	box-sizing:border-box;
+	border:1px solid #369854;
+	border-radius:6px;
+	background-color:#decfab;
+	color:black;
+}
+table 
+{
+  		border-collapse: collapse;
+  		width: 100%;
+}
+th, td 
+{
+  		text-align: center;
+  		font-weight: bold;
+}
+thead
+{
+    background-color:#369854;
+}
+tr:nth-child(even)
+{
+		background-color: #c2c2c2;
+}
+.abut
+{
+    position:absolute;
+    top:15%;
+    width:15%;
+    font-size:20px;
+    text-decoration: none;
+	padding:10px 5px;
+	margin-left:20px;
+	border:1px solid #ff0000;
+	border-radius: 15px;
+	background-color:#369854;
+	color:white;
+}
+.abut:hover
+{
+    color:rgb(196, 22, 22);
+}
+.search
+{
+    position:absolute;
+    top:15%;
+    width:5%;
+    font-size:20px;
+    text-decoration: none;
+	padding:10px 5px;
+	margin-left:1250px;
+	border:1px solid #ff0000;
+	border-radius: 15px;
+	background-color:#369854;
+	color:white;
+}
+.search:hover
+{
+    color:rgb(196, 22, 22);
+}

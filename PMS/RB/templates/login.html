@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login Form</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div class="top">
+            <h1>Pranjal Management System</h1>
+        </div>
+        <div class="divbut">
+            <h2>Sign in</h2>
+        </div>
+        <div class="divtab">
+        <form action="" method="post">
+            <div class="mainform">
+            {% csrf_token %}
+            <label for="" class="label">Username : </label><br>            
+            {{form.Username}}
+            <br>
+            <label for="" class="label">Password : </label><br>                        
+            {{form.Password}}
+            <br><br>
+            <input type="submit" value="Login"/>
+            <a href="/sign">Sign up?</a>
+            <br>
+               {{msg}}
+        </div>
+        </form>
+    </div>
+    </body>
+</html>

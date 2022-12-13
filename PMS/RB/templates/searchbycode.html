@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Search by code</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div class="top">
+            <h1>Pranjal Management System</h1>
+        </div>
+        <div class="divbut">
+            <h2>Search by Code</h2>
+        </div>
+        <div class="divtab">
+           
+        <form action="" method="post">
+            <div class="mainform">
+            {% csrf_token %}
+            <label for="" class="label">Code : </label><br>            
+            <input type="text" name="Code" />
+            <br><br>
+            <input type="submit" value="Find Employee"/>
+        </div>
+        </form>
+    </div>
+    </body>
+</html>

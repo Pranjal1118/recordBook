@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>List of Employees</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/design.css' %}" type="text/css" />
+    </head>
+    <body>
+        <div class="top">
+            <h1>Pranjal Management System</h1>
+        </div>
+        <div class="divbut">
+            <a class="abut" href="/emp">Back to List</a> 
+        </div>
+        <div class="divtab">
+            <h2>Search Options</h2>        
+            <table>
+             <tbody>
+                    <tr>
+                        <td><a href="/scode">Search by code</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Search by name</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
